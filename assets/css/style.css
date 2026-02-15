@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   padding: 0px;
   margin: 0px;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /*Cores default (light)*/
@@ -23,7 +28,6 @@
     --text-color: rgb(255, 255, 255);
 }
 
-
 body {
 	background-color: var(--bg-main);
 	background-size: cover;
@@ -32,23 +36,6 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	gap: 20px;
-}
-
-
-
-.paises {
-    width: 100%;
-    padding: 50px;
-    margin: 0px;
-    gap: 14px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-color);
-    font-weight: 200;body, html {
-    overflow-x: hidden;
-}
 }
 
 header {
@@ -68,10 +55,9 @@ header {
 
 .paises {
     width: 100%;
-    padding: 50px;
+    padding: 50px 20px;
     margin: 0px;
     gap: 14px;
-    background-color: rgb(255, 255, 255);
     align-items: center;
     background-color: var(--main-color);
     justify-content: center;
@@ -79,7 +65,6 @@ header {
     flex-direction: column;
     font-weight: 200;
     font-size: 20px;
-    height: 50px;
     color: var(--text-color);
 }
 
@@ -87,10 +72,11 @@ header {
     padding: 20px;
     gap: 20px;
     width: 100%;
-    height: 500px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-image: url("../imgs/comidas/ChatGPT\ Image\ 1\ de\ dez.\ de\ 2025\,\ 14_11_37.png");
     background-size: cover;
     background-position: center;
@@ -101,7 +87,7 @@ header {
 .alinhamento {
     margin: 10px;
     width: 70%;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,22 +120,22 @@ header {
 }
 
 .button-theme {
-    width: 120px;
-    height: 35px;
-    border-radius: 30px;
-    border: solid 2px rgb(255, 187, 0);
-    background-image: url("../imgs/icons/back-dia-button.png");
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     background-size: cover;
     align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
+    background-image:url("../imgs/icons/lightbulb-fill.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
 }
 
 .button-theme:hover {
-    background-image:url("../imgs/icons/back-noite-button-theme.png");
-    background-size: cover;
-    color: rgb(255, 255, 255);
+    background-image:url("../imgs/icons/lightbulb-off.svg");
 }
 
 .center {
@@ -163,19 +149,17 @@ header {
      align-items: center;
      justify-content: center;
      flex-direction: column;
-     img {
-        border-radius: 30px;
-        transition: all 0.3s ease;
-        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
-
-    }
-
-    img:hover {
-        transform: scale(1.1);
-        }
 }
 
+.bandeira img {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
+}
 
+.bandeira img:hover {
+    transform: scale(1.1);
+}
 
 body {
     background-size: cover;
@@ -183,17 +167,16 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
-   
+    height: auto;
 }
 
 main {
     background-color: var(--main-color);
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 1000px;
+    min-height: 1000px;
     gap: 10px;
     padding: 10px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
@@ -209,7 +192,6 @@ main {
     gap: 10px;
     padding: 10px;
     width: 100%;
-    height: 100%;
     flex-wrap: wrap;
 }
 .button-italia {
@@ -255,46 +237,6 @@ main {
     transform: scale(1.1);
 }
 
-.button-brasil {
-    width: 100px;
-    height: 50px;
-    transition: all 0.3s ease;
-    background-image: url("../imgs/imgs-brasil/bandeira.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-}
-.button-brasil:hover {
-    transform: scale(1.1);
-}
-
-.button-india {
-    width: 100px;
-    height: 50px;
-    transition: all 0.3s ease;
-    background-image: url("../imgs/imgs-india/bandeira.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-}
-.button-india:hover {
-    transform: scale(1.1);
-}
-.button-franca {
-    width: 100px;
-    height: 50px;
-    transition: all 0.3s ease;
-    background-image: url("../imgs/imgs-franca/bandeira.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-}
-.button-franca:hover {
-    transform: scale(1.1);
-}
 .button-somalia {
     width: 100px;
     height: 50px;
@@ -307,14 +249,12 @@ main {
 }
 .button-somalia:hover {
     transform: scale(1.1);
-
-
 }
 
 
 .container-1 {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,263 +267,251 @@ main {
     height: 1px;
 }
 
-.bestseler-1 {
+.bestseler-1, .bestseler-2, .bestseler-3 {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
-.img-pratos-1 {
+.img-pratos-1, .img-pratos-2, .img-pratos-3 {
     width: 300px;
+    max-width: 100%;
     display: flex;
     transition: transform 0.3s ease;
 }
-.img-pratos-1:hover {
+
+.img-pratos-1:hover, .img-pratos-2:hover, .img-pratos-3:hover {
     transform: scale(1.1);
-} 
-
-.element-vazio {
-    width: 100px;
-
-}
-
-.desc1 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-.bestseler-1 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-}
-
-.img-pratos-1 {
-    width: 300px;
-    display: flex;
-
-}
-
-.element-vazio {
-    width: 100px;
-}
-
-.desc1 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-
-main, .container-1, .bestseler-1, .block-1 {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-
-
-.bestseler-2 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-}
-
-.img-pratos-2 {
-    width: 300px;
-    display: flex;
-    transition: transform 0.3s ease;
-
-}
-
-.img-pratos-2:hover {
-    transform: scale(1.1);
-}
-
-.element-vazio {
-    width: 100px;
-}
-
-.desc2 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-.bestseler-2 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-}
-
-.img-pratos-2 {
-    width: 300px;
-    display: flex;
-
-}
-
-.element-vazio {
-    width: 100px;
-}
-
-.desc2 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-
-
-main, .container-1, .bestseler-2, .block-2 {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-
-
-
-.bestseler-3 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-}
-
-.img-pratos-3 {
-    width: 300px;
-    display: flex;
-    transition: transform 0.3s ease;
-
-}
-
-.img-pratos-3:hover {
-    transform: scale(1.1);
-}
-
-.element-vazio {
-    width: 100px;
-}
-
-.desc3 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo3 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-.bestseler-3 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-}
-
-.img-pratos-3 {
-    width: 300px;
-    display: flex;
-
-}
-
-.element-vazio {
-    width: 100px;
-}
-
-.desc3 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.titulo3 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 60px;
-}
-
-
-main, .container-1, .bestseler-3, .block-3 {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.button-brasil:hover, .button-italia:hover, .button-japan:hover,
-.button-mexic:hover, .button-india:hover, .button-franca:hover,
-.button-somalia:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-.img-pratos-1:hover, .img-pratos-2:hover, .img-pratos-3:hover{
+.element-vazio {
+    width: 100px;
+}
+
+.desc1, .desc2, .desc3 {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.titulo1, .titulo2, .titulo3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+main, .container-1, .bestseler-1, .bestseler-2, .bestseler-3, .block-1, .block-2, .block-3 {
+    max-width: 100%;
+    overflow: visible;
+}
+
+.button-italia:hover, .button-japan:hover,
+.button-mexic:hover, .button-somalia:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        gap: 20px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .paises {
+        padding: 30px 15px;
+        font-size: 18px;
+    }
+
+    .alinhamento {
+        width: 90%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .titulo-ali {
+        width: 100%;
+    }
+
+    .Button-one {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-italia, .button-japan, .button-mexic, .button-somalia {
+        width: 80px;
+        height: 45px;
+    }
+
+    .bestseler-1, .bestseler-2, .bestseler-3 {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .img-pratos-1, .img-pratos-2, .img-pratos-3 {
+        width: 250px;
+    }
+
+    .titulo1, .titulo2, .titulo3 {
+        font-size: 32px;
+    }
+
+    .desc1, .desc2, .desc3 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (max 767px) */
+@media screen and (max-width: 767px) {
+    header {
+        gap: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .paises {
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .Titulo-Car {
+        font-size: 24px;
+    }
+
+    .alinhamento {
+        width: 95%;
+        font-size: 16px;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .img-world {
+        min-height: 200px;
+        padding: 15px;
+    }
+
+    .titulo-ali {
+        width: 100%;
+    }
+
+    .Button-one {
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+
+    .button-italia, .button-japan, .button-mexic, .button-somalia {
+        width: 70px;
+        height: 40px;
+    }
+
+    main {
+        min-height: auto;
+        padding: 5px;
+        width: calc(100% - 10px);
+    }
+
+    .Botoes {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .bestseler-1, .bestseler-2, .bestseler-3 {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 8px;
+    }
+
+    .img-pratos-1, .img-pratos-2, .img-pratos-3 {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .element-vazio {
+        width: 0;
+    }
+
+    .desc1, .desc2, .desc3 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .titulo1, .titulo2, .titulo3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .container-1 {
+        width: 100%;
+    }
+}
+
+/* Extra small (max 480px) */
+@media screen and (max-width: 480px) {
+    .paises {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .Titulo-Car {
+        font-size: 20px;
+    }
+
+    .alinhamento {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .button-italia, .button-japan, .button-mexic, .button-somalia {
+        width: 60px;
+        height: 35px;
+    }
+
+    .titulo1, .titulo2, .titulo3 {
+        font-size: 20px;
+    }
+
+    .desc1, .desc2, .desc3 {
+        font-size: 13px;
+    }
+
+    .img-pratos-1, .img-pratos-2, .img-pratos-3 {
+        max-width: 150px;
+    }
+
+    main {
+        gap: 8px;
+    }
+
+    .bestseler-1, .bestseler-2, .bestseler-3 {
+        gap: 10px;
+        padding: 5px;
+    }
 }
