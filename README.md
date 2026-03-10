@@ -1,135 +1,75 @@
-Aqui está um **README.md completo** para o seu projeto baseado nos arquivos enviados:
+# PlanetFlavors — Explorador de Sabores
+
+![Status](https://img.shields.io/badge/status-concluído-brightgreen)
+![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
+
+🔗 **Deploy:** [davinunes01001.github.io/Explorador-de-Sabores](https://davinunes01001.github.io/Explorador-de-Sabores/)
 
 ---
 
-# 🌍 PlanetFlavors – Explorador de Sabores
+## Sobre o projeto
 
-Projeto simples desenvolvido com **HTML, CSS e JavaScript**, utilizando manipulação do **DOM** para alterar dinamicamente os conteúdos da página.
+Cardápio interativo desenvolvido em grupo no curso de ADS, com **HTML, CSS e JavaScript puro**.
 
-A proposta do projeto é permitir que o usuário explore pratos típicos de diferentes países, alterando imagens, títulos e descrições ao clicar nas bandeiras.
-
-🔗 Acesse o projeto online:
-[https://davinunes01001.github.io/Explorador-de-Sabores/](https://davinunes01001.github.io/Explorador-de-Sabores/)
+O usuário seleciona um país e a página atualiza dinamicamente os pratos típicos, imagens e descrições — tudo via manipulação de DOM, sem frameworks.
 
 ---
 
-## 📌 Sobre o Projeto
+## Funcionalidades
 
-O **PlanetFlavors** é um cardápio interativo onde o usuário pode:
-
-* Selecionar um país
-* Visualizar pratos típicos
-* Ler descrições personalizadas
-* Alternar entre tema claro e escuro
-* Ouvir uma música ambiente
-
-Todo o conteúdo é atualizado dinamicamente através de manipulação do DOM com JavaScript.
+- Troca dinâmica de pratos ao clicar nos países
+- Imagens e textos atualizados via JavaScript
+- Tema claro / escuro (Dark Mode)
+- Áudio ambiente integrado
+- Design responsivo — mobile, tablet e desktop
 
 ---
 
-## 🚀 Funcionalidades
+## Tecnologias
 
-✔️ Troca dinâmica de pratos ao clicar nos países
-✔️ Alteração de imagens e textos via JavaScript
-✔️ Tema claro/escuro (Dark Mode)
-✔️ Design responsivo (Mobile, Tablet e Desktop)
-✔️ Efeitos visuais com hover
-✔️ Áudio ambiente integrado
+- HTML5
+- CSS3 (variáveis CSS, Media Queries, transições)
+- JavaScript (DOM manipulation, eventos)
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-* **HTML5** → Estrutura da aplicação
-* **CSS3** → Estilização e responsividade (Media Queries)
-* **JavaScript (DOM)** → Manipulação dinâmica do conteúdo
-
----
-
-## 🧠 Conceitos Aplicados
-
-### 🔹 Manipulação do DOM
-
-Uso de:
-
-* `getElementById`
-* Alteração de `src` de imagens
-* Alteração de `innerText` / `textContent`
-* Adição e remoção de classes (como `.dark`)
-
-### 🔹 Eventos
-
-* `addEventListener` para capturar cliques nos botões
-* Interação com elementos de áudio
-
-### 🔹 CSS Avançado
-
-* Variáveis CSS (`:root`)
-* Tema Dark com troca dinâmica
-* Responsividade com Media Queries
-* Transições e efeitos hover
-
----
-
-## 📂 Estrutura do Projeto
+## Estrutura do projeto
 
 ```
-📁 assets
- ├── 📁 css
- │    └── style.css
- ├── 📁 script
- │    └── script.js
- ├── 📁 imgs
- └── 📁 sounds
-📄 index.html
-📄 README.md
+Explorador-de-Sabores
+│
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── script
+│   │   └── script.js
+│   ├── imgs
+│   └── sounds
+└── index.html
 ```
 
 ---
 
-## 🎯 Como Executar o Projeto
-
-1. Clone o repositório:
+## Como executar
 
 ```bash
 git clone https://github.com/davinunes01001/Explorador-de-Sabores.git
 ```
 
-2. Abra o arquivo `index.html` no navegador.
+Abra `index.html` diretamente no navegador ou use a extensão **Live Server** no VS Code.
 
-Não é necessário instalar dependências, pois o projeto é totalmente front-end.
-
----
-
-## 📸 O que o Projeto Demonstra
-
-Este projeto demonstra:
-
-* Domínio básico de JavaScript
-* Organização de estrutura front-end
-* Uso de boas práticas de layout
-* Separação entre HTML, CSS e JS
-* Experiência com projetos interativos
+Não há dependências para instalar.
 
 ---
 
-## 💡 Melhorias Futuras
+## Equipe
 
-* Adicionar mais países
-* Criar animações mais avançadas
-* Transformar em SPA
-* Buscar dados de uma API real
-* Implementar sistema de favoritos
-
----
-
-## 👨‍💻 Autores
-Projeto desenvolvido por:
--Davi Nunes
--Lucas Emanuell
--Miguel Franco
--Matheus Lopes
-
----
-
-
+| Nome |
+|---|
+| Davi Nunes |
+| Lucas Emanuell |
+| Miguel Franco |
+| Matheus Lopes |
